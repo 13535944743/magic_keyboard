@@ -86,6 +86,11 @@ function onResize() {
 onResize();
 window.addEventListener('resize', onResize);
 
+function preloadImg (url) {
+  const img = new window.Image()
+  img.src = url
+}
+
 function generatePositions() {
   KEYS.forEach((row) => {
     row.forEach((letter, i) => {
@@ -94,6 +99,9 @@ function generatePositions() {
       }
 
       positions[letter] = ((i / row.length) + (0.5 / row.length)) * WIDTH;
+
+      // 预加载
+      preloadImg(getImagePath(letter));
     })
   })
 }
