@@ -1,0 +1,24 @@
+{
+  "name": "matterjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx webpack server",
+    "build": "npx webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "matter-js": "^0.10.0",
+    "matter-wrap": "^0.2.0",
+    "vkey": "^1.0.1",
+    "webpack": "^5.84.0",
+    "webpack-cli": "^5.1.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^4.15.0"
+  }
+}
